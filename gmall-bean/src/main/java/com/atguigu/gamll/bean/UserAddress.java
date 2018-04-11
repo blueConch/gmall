@@ -4,6 +4,10 @@ import javax.persistence.Column;
 import javax.persistence.Id;
 import java.io.Serializable;
 
+/**
+ * @param
+ * @return
+ */
 public class UserAddress implements Serializable {
     @Column
     @Id
@@ -18,18 +22,6 @@ public class UserAddress implements Serializable {
     private String phoneNum;
     @Column
     private String isDefault;
-
-    @Override
-    public String toString() {
-        return "UserAddress{" +
-                "id='" + id + '\'' +
-                ", userAddress='" + userAddress + '\'' +
-                ", userId='" + userId + '\'' +
-                ", consignee='" + consignee + '\'' +
-                ", phoneNum='" + phoneNum + '\'' +
-                ", isDefault='" + isDefault + '\'' +
-                '}';
-    }
 
     public String getId() {
         return id;

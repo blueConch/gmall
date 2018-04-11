@@ -7,17 +7,16 @@
     <groupId>com.atguigu.gmall</groupId>
     <artifactId>gmall-bean</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <parent>
-        <artifactId>gmall-parent</artifactId>
         <groupId>com.atguigu.gmall</groupId>
+        <artifactId>gmall-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <dependencies>
         <dependency>
             <groupId>tk.mybatis</groupId>
             <artifactId>mapper-spring-boot-starter</artifactId>
-            <version>1.2.3</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework.boot</groupId>
@@ -25,6 +24,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-    </dependencies>
-</project>
 
+    </dependencies>
+
+</project>
